@@ -1,14 +1,19 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+        MyApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+      <div *ngFor="let product of products">
+          <h4>product.name</h4>
+      </div>
+
+      <ion-button expand="rounded" (click)="clicou()">
+        <ion-icon slot="icon-only" name="moon"></ion-icon>
+        Clique aqui!
+      </ion-button>
   </div>
 </ion-content>

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() 
+  {
 
+  }
+
+  clicou (){
+     console.log("Clicou!");
+  }
 }
